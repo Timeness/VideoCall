@@ -4,17 +4,18 @@ A modern, end-to-end encrypted video calling application built with React, Node.
 
 ## Setup
 
-### Backend
-1. Navigate to `server/`.
-2. Run `npm install`.
-3. Create a `.env` file with `PORT` and `FRONTEND_URL`.
-4. Run `npm start` or `npm run dev`.
-
-### Frontend
-1. Navigate to `client/`.
-2. Run `npm install`.
-3. Create a `.env` file with `REACT_APP_SERVER_URL`.
-4. Run `npm start`.
+1. Run `npm run install-all` to install dependencies for both client and server.
+2. Create `.env` files:
+   - `server/.env`:
+     ```
+     PORT=5000
+     FRONTEND_URL=http://localhost:3000
+     ```
+   - `client/.env`:
+     ```
+     REACT_APP_SERVER_URL=http://localhost:5000
+     ```
+3. Run `npm start` to start both the frontend and backend simultaneously.
 
 ## Features
 - End-to-end encrypted video calls using WebRTC (DTLS/SRTP).
